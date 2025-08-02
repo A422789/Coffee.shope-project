@@ -1,0 +1,954 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --color-1:#4A1F1F; 
+    --color-2:#F59E0B; 
+    --color-3:#FCFAF9;  
+    --color-4:#1A1A1A ;
+
+}
+
+/*
+:root {
+  --color-1: #EFE6DD;  
+  --color-2: #8B5E3C;  
+  --color-3: #3C2F2F;  
+  --color-4: #D6BAA3;  
+}
+  */
+section{
+    width: 1525px;
+    height: 100vh;
+    margin-top: -20px;
+}
+h1{
+    text-transform: uppercase;
+    position: relative;
+    left: 50px;
+}
+h1::before{
+    content: "";
+    width: 5%;
+    height: 5px;
+    background-color: var(--color-2);
+    position: absolute;
+    left: 1.5%;
+    bottom: -20px;
+    border-radius: 40px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    
+}
+@media (min-width:1025px) {
+    input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+header label span{
+    display: none;
+    visibility: hidden;
+}
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.nav-1{
+    position: absolute;
+    left: 70px;
+}
+ header nav img{
+    width: 50px;
+    height:45px;
+    position: relative;
+    top: 13px;
+    transform: scale(1.4);
+}
+header .nav-1 p{
+    transform: scale(2);
+    position: relative;
+    left: 40px;
+    top: 5px;
+    font-weight: bold;
+
+}
+.nav-2{
+    position: absolute;
+    top: 15px;
+    right: 100px;
+}
+ header nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 20px;
+   list-style-type:none ;
+   
+}
+ header nav a{
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 20px; 
+}
+ header .nav-2 ul li{
+     height: 10px;
+     width:fit-content;
+     padding: 15px;
+     border-radius: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+header .nav-2 ul li:hover{
+    background-color: var(--color-2);
+    color: var(--color-1 ) !important;
+}
+header .nav-2 ul li:hover a {
+    color: var(--color-1);
+}
+/*break*/
+  
+
+#sec-1{
+    background-color:var(--color-1);
+    height: 100vh;
+    margin-top:80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(5 ,1fr);
+    grid-template-areas:
+    "span img"
+     "h2 img"
+     "p img"
+    "but-1 img"
+    "but-2 img";                      
+}
+#sec-1 span{
+grid-area: span;
+transform: translate(80px , 140px);
+    color: var(--color-2);
+    font-size: 30px;
+    font-weight: bold;
+        font-family: 'Pacifico', cursive;
+}
+
+#sec-1 h2{
+    grid-area: h2;
+    transform: translate(80px ,50px);
+    color: var(--color-3);
+    font-size: 40px;
+    font-weight: bold;
+    width: 500px;
+}
+#sec-1 p{
+    grid-area: p;
+   transform: translate(80px ,40px);
+   color: var(--color-3);
+   font-size: 17px;
+   width: 400px;
+}
+#sec-1 .but-1{
+    grid-area: but-1;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: none;
+    transform: translate(80px , 5px);
+}
+#sec-1 .but-1:hover{
+    background-color: var(--color-1);
+    color: var(--color-3);
+    border: 1px solid var(--color-3);
+    cursor: pointer;
+
+}
+#sec-1 .but-2{
+    grid-area: but-2;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: transparent;
+    color: var(--color-3);
+    border: 1px solid var(--color-3);
+    transform: translate(240px , -138px);
+}
+#sec-1 .but-2:hover{
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border: 1px solid var(--color-2);
+    cursor: pointer;
+
+}
+
+#sec-1 img{
+    grid-area: img;
+    position: relative;
+    right: -90px;
+    bottom: -40px;
+}
+/*break*/
+
+
+
+#sec-2{
+    background-color:#eeeeeeb0;
+    margin-top: 0px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: 
+    "img h1"
+    "img  p"
+    "img  icons";
+}
+#sec-2 img{
+    grid-area:img;
+   border-radius: 50%;
+   position: relative;
+    top: 100px;
+    left: 100px;
+}
+#sec-2 h1{
+grid-area: h1;
+transform: translate(80px,90px);
+font-size: 30px;
+}
+ #sec-2 h1::before{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: var(--color-2);
+    border-radius: 40px;
+    transform: translate(15px ,-90px);
+}
+#sec-2 p{
+grid-area: p;
+width: 500px;
+position: relative;
+top: 40px;
+}
+#sec-2 .icons {
+    grid-area: icons;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    transform: scale(1.5);
+    position: relative;
+    left: 200px;
+    top: 40px;
+   }
+   #sec-2 .icons i{
+      animation: i 3s infinite ;
+   }
+   #sec-2 .icons #one{
+    animation-delay: 1s;
+   }
+     #sec-2 .icons #two{
+    animation-delay: 1.5s;
+   }
+      #sec-2 .icons #three{
+    animation-delay: 2s;
+   }
+#sec-2 i:hover{
+    color: var(--color-2);
+    cursor: pointer;
+}
+@keyframes i{
+   50% {
+       transform: translateY(60);
+        color: var(--color-2);
+        transform: scale(1.5);
+
+    }
+    100%{
+        transform: translateY(-60);
+         
+    }
+   
+}
+/*break*/
+
+
+#sec-3{
+    background-color:var(--color-4);
+    height: 175vh;
+}
+#sec-3 h1{
+    color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    transform:translateY(120px) ;
+}
+h1::before{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: var(--color-2);
+    border-radius: 40px;
+    transform: translate(700px ,0px);
+}
+#sec-3 .parent{
+    transform: translateY(140px);
+    height: 150vh;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#sec-3 .parent div{
+   color: var(--color-3);
+   height: 75vh;
+   width: 500px;
+}
+#sec-3 .parent div img{
+  transform: translateX(100px);
+
+}
+#sec-3 .parent div h2{
+  text-align: center;
+  transform: scale(1.3);
+}
+#sec-3 .parent div p{
+    transform: translateX(-70px);
+    text-align: center;
+    transform: scale(1.2);
+} 
+/*break*/ 
+
+
+#sec-4{
+    background-color: var(--color-3);
+}
+#sec-4 h1{
+    display: flex;
+    justify-content: center;
+    transform: translateY(90px);
+}
+h1::before{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background-color: var(--color-2);
+    border-radius: 40px;
+    transform: translate(680px ,0px);
+}
+#sec-4 .parent{
+    width: 1200px;
+    position: relative;
+    bottom: -150px;
+    left: 180px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+}
+#sec-4 .parent div{
+    scroll-snap-align: center; 
+    flex: 0 0 auto; 
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+}
+#sec-4 .parent img{
+    transform: scale(.8);
+    text-align: center;
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+#sec-4 .parent h2{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+#sec-4 .parent p{
+text-align: center;
+position: relative;
+bottom: 50px;
+}
+#testimonialContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+  
+    scrollbar-width: none; 
+  }
+  
+  #testimonialContainer::-webkit-scrollbar {
+    display: none; 
+  }
+  #sec-4  .but-2{
+    height: 30px;
+    width: 40 px;
+    transform: scale(4);
+    background-color: transparent;
+    border: none;
+    color: var(--color-2);
+    position: relative;
+    left: 1350px;
+    cursor: pointer;
+    bottom: 40px;
+  }
+  #sec-4  .but-1{
+    height: 30px;
+    width: 40 px;
+    transform: scale(4);
+    background-color: transparent;
+    border: none;
+    color: var(--color-2);
+    position: relative;
+    left: 120px;
+    cursor: pointer;
+    top: 335px;
+   
+  }
+/*break*/  
+
+
+  
+#sec-5{
+    background-color: var(--color-3);
+    height: 120vh;
+}    
+#sec-5 h1{
+    color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    transform: translateY(90px);
+    
+}
+h1::before{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: var(--color-2);
+    border-radius: 40px;
+    transform: translate(700px ,-5px);
+}
+#sec-5 .parent{
+    transform: translateY(140px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap:wrap;
+    padding-left:30px ;
+    padding-right:30px;
+    
+    
+}
+#sec-5 .parent div{
+   color: var(--color-3);
+   height: 300px;
+   width: 450px;
+   background-color: #F59E0B;
+   border-radius: 20px;
+   transform: scale(1.05);
+   margin-bottom: 10px;
+   overflow: hidden;
+}
+#sec-5 .parent img{
+    width: 450px;
+    height: 300px;
+    transition: .5s;
+}
+#sec-5 .parent img:hover{
+  transform: scale(1.3);
+
+}
+
+
+/*break*/  
+#sec-6{
+    height: 85vh;
+}
+
+#sec-6 .parent{
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas: 
+    "h1 h1 "
+    "img input-1"
+    "img input-2"
+    "img text-area"
+    "img but-1" ;
+}
+#sec-6 .parent img{
+    grid-area: img;
+    transform: scale(1.6);
+    position: relative;
+    top: 130px;
+    left: 150px ;
+}
+#sec-6 .parent h1{
+     grid-area: h1;
+     transform:translate(600px,20px);
+     color: var(--color-1);
+}
+ #sec-6 h1::before{
+    transform: translate(0px);
+}
+#sec-6 .parent input[placeholder="Your name"]{
+    grid-area: input-1 ;
+    width: 600px;
+    transform:translateY(80px);
+    padding-left: 10px;
+}
+#sec-6 .parent input[placeholder="Your email"]{
+    grid-area: input-2 ;
+    width: 600px;
+    transform:translateY(100px);
+    padding-left: 10px;
+}
+#sec-6 input:focus{
+    outline: 1px solid var(--color-2);
+
+}
+#sec-6 .parent textarea{
+    grid-area: text-area;
+    width: 600px;
+    transform:translateY(120px);
+    padding: 10px;
+}
+#sec-6 textarea:focus{
+    outline: 1px solid var(--color-2);
+
+}
+#sec-6 .parent .submit{
+   grid-area: but-1;
+   height: 40px;
+    width: 140px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    border: none;
+    transform:translateY(150px);
+}
+#sec-6 .parent button:hover{
+    background: transparent;
+    color: var(--color-1);
+    border: 2px solid var(--color-1);
+    cursor: pointer;
+}
+footer {
+  padding: 20px 0;
+  position: relative;
+  bottom: -200px ;
+  border-top:3px solid var(--color-1);
+  height: 50px;
+  background-color: white !important;
+}
+
+
+footer .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .one {
+  justify-self: start;
+  transform: translate(-150px,20px);
+  word-spacing: 1px;
+}
+
+footer .two {
+  justify-self: center;
+  transform: translate(-300px,10px);
+  z-index: 10;
+}
+
+footer .three {
+  justify-self: end;
+  transform: translate(750px,-10px);
+}
+
+footer .two i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+footer .two i:hover {
+  color: var(--color-2);
+  transform: scale(1.);
+}
+
+footer .three a {
+  margin-left: 15px;
+  text-decoration: none;
+  color:var(--color-1);
+}
+
+footer .three a:hover {
+  text-decoration: none;
+  color: var(--color-2);
+}
+@media (max-width:1024px){
+
+  .nav-2 ul{
+      background-color:var(--color-3);
+      flex-direction: column;
+      height: 100vh;
+      width: 250px;
+      position: relative;
+      top: -50px;
+      left: -650px;
+      transition: .5s;
+      transform: translateX(-260px);
+      opacity: 1;
+    pointer-events: none;
+  }
+
+  .nav-2 ul li{
+    transform: scale(1.3);
+    margin-bottom:30px ;
+    position: relative;
+    right: -50px;
+  }
+
+  .nav-2 ul li a{
+      color: var(--color-4);
+  }
+
+  header .nav-1 {
+      transform: scale(.7);
+      position:absolute;
+      left: 5px;
+      top:10px;
+  }
+
+  header .nav-2 label span{
+      display:block;
+      visibility: visible;
+      transform: scale(1.3);
+      width: fit-content;
+      position: relative;
+      top: -40px;
+      right: -190px;
+      color: var(--color-1);
+  }
+
+  .nav-1 span{
+    position: relative;
+    left: 1220px;
+    transform: scale(1.2);
+      color:var(--color-3);
+      width: 80px;
+      display: block;
+      visibility: visible;
+  }
+  .open span{
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+   header span:hover ,.nav-2 label span:hover{
+    color: var(--color-2);
+   }
+
+  #sec-1 span{
+    transform: scale(.7);
+    position: relative;
+    right: -350px;
+    bottom: -300px;
+  }
+
+  #sec-1 h2{
+    transform: scale(.6);
+    position: relative;
+    right: -150px;
+    bottom: -170px;
+    width: 100%;
+  }
+
+  #sec-1 p{
+      transform: scale(.8);
+      position: relative;
+      right: -180px;
+      bottom: -90px;
+      width: 100%;
+  }
+
+  #sec-1 .but-1{
+    transform: scale(.9);
+    position: relative;
+    right: -350px;
+  }
+
+  #sec-1 .but-2{
+    transform: scale(.9);
+    position: relative;
+    right: -500px;
+    bottom: 147px;
+  }
+
+  #sec-1 img{
+      transform: scale(.5);
+      position: relative;
+      right: 500px;
+      bottom: 90px;
+  }
+
+  #open:checked ~ .nav-2 ul {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #clos:checked ~ .nav-2 ul {
+    transform: translateX(-260px);
+  }
+
+
+  .open, .clos {
+    display: block;
+    cursor: pointer;
+  }
+
+  .open span, .clos span {
+    font-size: 30px;
+  }
+  /*break*/
+  #sec-2{
+    width: 1000px;
+    height: 100vh;
+  }
+  #sec-2 img{
+    transform: scale(.7);
+   position: relative;
+    top: 250px;
+    left: 340px;
+}
+#sec-2 h1{
+position: relative;
+top: -20px;
+left: 30px;
+transform: scale(.8);
+
+}
+ #sec-2 h1::before{
+   position: absolute;
+   bottom: 30px;
+}
+#sec-2 p{
+position: relative;
+top: -150px;
+left: -140px;
+width: 700px;
+line-height: 1.6;
+}
+#sec-2 .icons {
+    transform: scale(1);
+    position: relative;
+    left: 110px;
+    top: -250px;
+   }
+  
+#sec-3 {
+    height: 230vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#sec-3 .parent{
+    gap: 5px;
+    margin-left: 0px;
+    position: relative;
+    left: -50px;
+}
+#sec-3  h1{
+ position: relative;
+ top: -80px;
+ left: 500px;
+ 
+}
+ 
+
+/*break*/
+#sec-4 h1{
+    position: relative;
+    left: -230px;
+}
+#sec-4 .parent {
+    width: 700px;
+}
+  #sec-4  .but-2{
+    position: relative;
+    left: 920px;
+  }
+  #sec-5{
+    height: 180vh;
+    width:1200px;
+  }
+  #sec-5 h1{
+    position: relative;
+    left: -80px;
+
+  }
+  #sec-5 .parent{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+        gap: 40px;
+    flex-wrap:wrap;
+    padding-left:30px ;
+    
+  }
+  #sec-5 h1::before{
+    position: absolute;
+    left: -140px;
+  }
+  #sec-6 h1{
+    position: relative;
+    left: -150px;
+  }
+
+#sec-6 .parent{
+    display: flex;
+    flex-direction: column;
+}
+#sec-6 .parent input{
+    position: relative;
+    top: -1100px;
+    left: 250px;
+    height: 30px;
+}
+#sec-6 .parent textarea{
+    position: relative;
+    top: -1100px;
+    left: 250px;
+    height: 30px;
+}
+#sec-6 .parent input{
+    position: relative;
+    top: -1100px;
+    left: 250px;
+    height: 30px;
+}
+#sec-6 .parent button{
+    position: relative;
+    top: -1100px;
+    left: 250px;
+    height: 30px;
+}
+#sec-6 .parent img{
+    transform: scale(.4);
+    position: relative;
+    left: -200px;
+}
+
+  footer{
+    transform: translateY(250px);
+    position: relative;
+    left:-250px;
+    bottom: 350px;
+   
+  }
+  footer .parent .one{
+   transform: translate(-420px , 20px);
+  }
+    footer .parent .two{
+transform: translateX(30px);
+    }
+    footer .parent .three{
+      transform: translate(350px , -20px);
+    }
+}
+@media (max-width:767px){
+    section {
+       width: 767px;
+    }
+    
+
+  
+ #sec-1 img{
+      transform: scale(.5);
+      position: relative;
+      right: 250px;
+      bottom: 50px;
+  }
+  #sec-1 span{
+    transform: scale(.7);
+    position: relative;
+    right: -150px;
+    bottom: -310px;
+  }
+
+  #sec-1 h2{
+    transform: scale(.6);
+    position: relative;
+    right: -30px;
+    bottom: -180px;
+    width: 200%;
+  }
+
+  #sec-1 p{
+      transform: scale(.8);
+      position: relative;
+      right: -80px;
+      bottom: -120px;
+      width: 150%;
+  }
+
+  #sec-1 .but-1{
+    transform: scale(.9);
+    position: relative;
+    right: -80px;
+    bottom: -70px;
+  }
+
+  #sec-1 .but-2{
+    transform: scale(.9);
+    position: relative;
+    right: -240px;
+    bottom: 72px;
+  }
+}
+ /*break*/
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

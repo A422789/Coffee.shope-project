@@ -1,10 +1,8 @@
-﻿# The Coffee Corner ☕
+# The Coffee Corner ☕
 
 Welcome to The Coffee Corner, a modern and responsive website for a local café. This project showcases the services, menu, and atmosphere of the coffee shop, built with a clean and user-friendly interface.
 
-
 **Live Demo:** [**Visit The Coffee Corner Website**](https://a422789.github.io/Coffee.shope-project/ )
-
 
 ---
 
@@ -50,29 +48,19 @@ You just need a web browser to view the `index.html` file.
 
 1.  Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/A422789/Coffee.shope-project.git
     ```
 2.  Navigate to the project directory:
     ```bash
-    cd your-repo-name
+    cd Coffee.shope-project
     ```
 3.  Open the `index.html` file in your favorite browser.
 
 ---
 
-## Future Plans
-
-While the current version is fully functional, here are some ideas for future enhancements:
-
-- [ ] Integrate a backend to manage a dynamic menu from a database.
-- [ ] Add an online ordering system.
-- [ ] Create a "Contact Us" form that sends real emails.
-
----
-
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE ).
+This project is open-source. Feel free to use the code as you wish.
 
 ---
 
@@ -81,3 +69,4 @@ This project is open-source and available under the [MIT License](LICENSE ).
 *   Inspiration from various coffee shop designs.
 *   Bootstrap documentation for guidance.
 *   Font Awesome for icons.
+
